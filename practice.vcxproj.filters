@@ -21,7 +21,10 @@
     <ClCompile Include="radius.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="bubllesort.cpp">
+    <ClCompile Include="bubllesort.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="distance.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
