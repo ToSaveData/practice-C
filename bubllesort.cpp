@@ -1,43 +1,41 @@
 #include <stdio.h>
 
-int funcA(int ptr1, int pt2);
 
-int funcA(int ptr1,int ptr2)
+
+void funcA(int *ptr1,int *ptr2)
 {
-	int tmp,c;
+	int b, tmp;
 
-	for (c = 0; c < 5; c++)
+	for (b = 0; b < 5; b++)
 	{
-		tmp = ptr1;
-		ptr1 = ptr2;
-		ptr2 = tmp;
-
+		tmp = *ptr1; //tmp¿¡ ÁÖ¼Ò¿¡ ÀÖ´Â °ªÀ» ³Ñ°ÜÁÜ
+		*ptr1 = *ptr2; //°ªÀ» µ¤¾î¾¸
+		*ptr2 = tmp; // °ªÀ» µ¤¾î¾¸2
 		ptr1++, ptr2++;
 	}
-	return ptr1, ptr2;
 }
 
 int main()
 {
-	int a, b, *ptr1, *ptr2;
-	int i[5] = { 0,1,2,3,4 };
-	int j[5] = { 4,3,2,1,0 };
-	ptr1 = i;
-	ptr2 = j;
+	int a, c, *ptr1, *ptr2;
+	int data1[5] = { 0,1,2,3,4 };
+	int data2[5] = { 4,3,2,1,0 };
+	ptr1 = data1;
+	ptr2 = data2;
 
 	for (a = 0; a < 5; a++)
 	{
-		printf("before : %d, %d\n", i[a], j[a]);
-
+		printf("before : %d, %d\n", data1[a], data2[a]);
 	}
 	
-	funcA(*i, *j);
+	
+	funcA(ptr1, ptr2);
 
 	printf("\n");
 
-	for (b = 0; b < 5; b++)
+	for (c = 0; c < 5; c++)
 	{
-		printf("after: %d, %d\n", i[b],j[b]);
+		printf("after: %d, %d\n", data1[c],data2[c]);
 	}
 
 	return 0;
