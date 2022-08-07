@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-
-
 void funcA(int *ptr1,int *ptr2)
 {
 	int b, tmp;
