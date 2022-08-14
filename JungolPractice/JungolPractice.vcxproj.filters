@@ -15,25 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="practice1.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="radius.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="bubllesort.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="distance.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="jungol_beginner.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="jungol_beginner1.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="edit.c">
+    <ClCompile Include="jungol1.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
