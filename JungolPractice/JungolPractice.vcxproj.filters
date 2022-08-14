@@ -15,7 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="jungol1.c">
+    <ClCompile Include="jungol_1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="jungol_2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="jungou_3.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
