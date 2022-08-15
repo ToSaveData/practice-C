@@ -25,7 +25,7 @@ int main()
 	4 5 9 12 14 15
 
 	*/
-	for (i = 0; i < n; i++)
+	for (i = 0; i < n/2; i++)
 	{
 		for (j = 0; j < n; j++)
 		{

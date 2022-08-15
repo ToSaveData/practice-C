@@ -2,7 +2,7 @@
 
 int main()
 {
-	int i, j, n, a, b, num1, num2, add = 0, sub = 0, mul = 0, flag = 0;
+	int i, j, n, a, b, num, add = 0, sub = 0, mul = 0, flag = 0;
 
 	do
 	{
@@ -13,7 +13,7 @@ int main()
 	} while (n < 1 || n > 100 || n % 2 == 0);
 
 	a = n / 2;
-	
+
 	for (i = 0; i < n / 2; i++)
 	{
 		if (n - (2 * a) >= 1)
@@ -22,39 +22,30 @@ int main()
 	}
 
 	b = (n / 2) * 2;
-
+	
 	for (i = 0; i < n; i++)
 	{
-		num1 = 65 + ((add + i) % 26);
-		for (j = 0; j < n; j++)
+		for (j = 0; j <= n / 2; j++)
 		{
 			if (i >= j)
 			{
 				if (j == 0)
 				{
-					printf("%c ", num1);
-				}
-				else if (i == (n / 2) && j == (n / 2))
-				{
-					printf("%c ", 'A');
+					num = 65 + ((add + i) % 26);
+					printf("%c ", num);
 				}
 				else if (n - i - j > 0)
 				{
-					num2 = 65 + ((add + i + sub - b) % 26);
+					num = 65 + ((add + i + sub - b) % 26);
 					sub -= b;
-					printf("%c ", num2);
+					printf("%c ", num);
 					b -= 2;
 				}
-			}
-			else
-			{
-				printf("  ");
 			}
 		}
 		printf("\n");
 		b = (n / 2) * 2;
 		sub = 0;
 	}
-
 	return 0;
 }
