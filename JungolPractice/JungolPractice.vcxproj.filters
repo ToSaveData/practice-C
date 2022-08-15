@@ -27,7 +27,7 @@
     <ClCompile Include="jungol_4.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="jungol_4-1.c">
+    <ClCompile Include="jungol_5.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
