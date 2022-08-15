@@ -2,7 +2,7 @@
 
 int main()
 {
-	int i, j, n, a, b, num, add = 0, sub = 0, mul = 0, flag = 0;
+	int i, j, n, a, b, num, add = 0, sub = 0, flag = 0;
 
 	do
 	{
