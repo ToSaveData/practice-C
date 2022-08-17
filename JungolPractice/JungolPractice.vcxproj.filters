@@ -30,5 +30,11 @@
     <ClCompile Include="jungol_5.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="jungol_4-1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="easy.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

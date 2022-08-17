@@ -3,7 +3,7 @@
 int main()
 {
 	int i, j, n, a, b, num, add = 0, sub = 0, flag = 0;
-
+	
 	do
 	{
 		if (flag == 1)
